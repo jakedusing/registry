@@ -35,7 +35,7 @@ export default function HomePage() {
           The package manager for Javascript. Search and view packages.
         </p>
       </div>
-      <div className="mx-auto grid grid-cols-4 max-w-[900px] items-stretch gap-4">
+      <div className="mx-auto grid grid-cols-1 max-w-[900px] items-stretch gap-4 md:grid-cols-2 lg:grid-cols-4">
         {renderedPackages}
       </div>
     </div>
