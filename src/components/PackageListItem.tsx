@@ -24,9 +24,9 @@ export default function PackageListItem({ pack }: PackageListItemProps) {
           {pack.name}
         </Link>
         <p className="text-sm text-gray-500">{pack.description}</p>
-        <div className="flex gap-1">{renderedKeywords}</div>
+        <div className="flex gap-1 flex-wrap max-w-100">{renderedKeywords}</div>
       </div>
-      <div className="mr-6">
+      <div className="mr-6 ml-4">
         <Link
           to={`/packages/${pack.name}`}
           className="py-2 px-3 rounded bg-black text-white text-lg"
